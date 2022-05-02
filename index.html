@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jeu Des Paires</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="opa"></div>
+
+    <table class="bann" width="75%">
+      <tr>
+        <td width="20%"></td>
+        <td width="10%"><div class="time" id="timer"></div></td>
+      </tr>
+    </table>
+
+    <table class="row">
+      <tr>
+        <td width="9%"><img
+        class="banniere"
+        src="./img/JDP.png"
+        alt=""
+      />
+        </td>
+        <td width="2%"></td>
+        <td width="4%"><div onClick="history.go(0)">
+          <img class="reload" src="./img/Replay_1.png" 
+          onmouseover="this.src='./img/Replay_2.png';"
+          onmouseout="this.src='./img/Replay_1.png';"></div></td>
+      </tr>
+    </table>
+  
+    <div class="jeuCarte">
+      <table class="test" id="jeu">
+        <tr class="item">
+          <td onClick="controleJeu(0)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(1)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(2)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(3)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(4)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(5)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(6)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(7)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(8)"><img class="image" src="Card.jpg" /></td>
+        </tr>
+        <tr class="item">
+          <td onClick="controleJeu(9)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(10)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(11)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(12)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(13)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(14)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(15)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(16)"><img class="image" src="Card.jpg" /></td>
+          <td onClick="controleJeu(17)"><img class="image" src="Card.jpg" /></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="fin" id="game"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
